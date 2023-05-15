@@ -1,12 +1,17 @@
+import os
 import tiktoken
+from dotenv import load_dotenv
 from fastapi import FastAPI, Response, Request
 from pydantic import BaseModel
 
 
-DEFAULT_MODEL = "gpt-3.5-turbo"
-
-
+load_dotenv()
 app = FastAPI()
+
+
+DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "gpt-3.5-turbo")
+if not DEFAULT_MODEL:
+    raise ImportError
 
 
 class RequestModel(BaseModel):
