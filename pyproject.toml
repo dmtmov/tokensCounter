@@ -12,10 +12,6 @@ tiktoken = "^0.4.0"
 fastapi = "^0.95.1"
 uvicorn = "^0.22.0"
 
-[tool.pyright]
-venv = "openai-tiktoken-DD_oNema-py3.11"
-venvPath = "/Users/d/Library/Caches/pypoetry/virtualenvs/"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
