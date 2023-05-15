@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "openai-tiktoken"
+version = "0.1.0"
+description = ""
+authors = ["Dmytro Movchan <mail@dmtmov.me>"]
+readme = "README.md"
+packages = [{include = "openai_tiktoken"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tiktoken = "^0.4.0"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+
+[tool.pyright]
+venv = "openai-tiktoken-DD_oNema-py3.11"
+venvPath = "/Users/d/Library/Caches/pypoetry/virtualenvs/"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
